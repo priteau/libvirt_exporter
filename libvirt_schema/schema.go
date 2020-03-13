@@ -35,7 +35,16 @@ type NovaFlavor struct {
 }
 
 type NovaOwner struct {
-	ProjectName string `xml:"project"`
+	User        NovaUser    `xml:"user"`
+	Project     NovaProject `xml:"project"`
+}
+
+type NovaUser struct {
+	UserId string `xml:"uuid,attr"`
+}
+
+type NovaProject struct {
+	ProjectId string `xml:"uuid,attr"`
 }
 
 type Devices struct {

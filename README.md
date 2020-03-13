@@ -39,7 +39,8 @@ With the `--libvirt.export-nova-metadata` flag, it will export the following add
 
 - name
 - flavor
-- project_name
+- user_id
+- project_id
 
 At Kumina we want to perform a single build of this exporter, deploying
 it to a variety of Linux distribution versions. This is why this
